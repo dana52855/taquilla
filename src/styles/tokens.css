@@ -1,0 +1,27 @@
+:root{
+    --color-fondo: #f8fafc;
+    --color-superficie: #ffffff;
+    --color-texto: #172033;
+    --color-texto-secundario: #475569;
+    --color-primario: #1d4ed8;
+    --color-primario-hover: #1e40af;
+    --color-sobre-primario: #ffffff;
+    --color-borde: #cbd5e1;
+    --color-foco: #7c3aed;
+
+    --fuente-texto: system-ui, -apple-system, BlinkMacSystemFont, "segoe UI", sans-serif;
+    --fuente-titulos: Georgia, "Times New Roman", serif;
+    --texto-pequeno: 0.875rem;
+    --texto-base: 1rem;
+    --texto-subtitulo: 1.5rem;
+    --texto-titulo: clamp(2rem, 1.5rem + 2vw, 3rem);
+    --interlineado: 1.6;
+
+    --espacio-1: 0.5rem;
+    --espacio-2: 1rem;
+    --espacio-3: 1.5rem;
+    --espacio-4: 2rem;
+    --espacio-5: 3rem;
+    --radio: 0.5rem;
+    --ancho-contenido: 72rem;
+}

@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: var(--fuente-texto);
+    font-size: var(--texto-base);
+    line-height: var(--interlineado);
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
+
+h1,h2,h3{
+    font-family: var(--fuente-titulos);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+h1 { font-size: var(--texto-titulo);}
+h2 { font-size: var(texto-subtitulo);}
+a:hover { color: var(--color-primario-hover);}
+
+.contenedor {
+    max-width: var(--ancho-contenido);
+    margin-inline: auto;
+    width: calc(100% -2rem);
+}
