@@ -1,27 +1,74 @@
-:root{
-    --color-fondo: #f8fafc;
-    --color-superficie: #ffffff;
-    --color-texto: #172033;
-    --color-texto-secundario: #475569;
-    --color-primario: #1d4ed8;
-    --color-primario-hover: #1e40af;
-    --color-sobre-primario: #ffffff;
-    --color-borde: #cbd5e1;
-    --color-foco: #7c3aed;
+/* Tokens de diseño de Taquilla, exportados del archivo de Figma. */
+/* Nombres iguales a las variables de Figma: "fondo/pagina" se usa como var(--fondo-pagina). */
 
-    --fuente-texto: system-ui, -apple-system, BlinkMacSystemFont, "segoe UI", sans-serif;
-    --fuente-titulos: Georgia, "Times New Roman", serif;
-    --texto-pequeno: 0.875rem;
-    --texto-base: 1rem;
-    --texto-subtitulo: 1.5rem;
-    --texto-titulo: clamp(2rem, 1.5rem + 2vw, 3rem);
-    --interlineado: 1.6;
-
-    --espacio-1: 0.5rem;
-    --espacio-2: 1rem;
-    --espacio-3: 1.5rem;
-    --espacio-4: 2rem;
-    --espacio-5: 3rem;
-    --radio: 0.5rem;
-    --ancho-contenido: 72rem;
+:root {
+  /* Color */
+  --fondo-pagina: #f7f7f7;
+  --fondo-superficie: #ffffff;
+  --fondo-sutil: #f0f0f0;
+  --fondo-inverso: #141414;
+  --fondo-inverso-2: #262626;
+  --marca-primario: #141414;
+  --marca-primario-hover: #2e2e2e;
+  --marca-primario-suave: #f0f0f0;
+  --marca-acento: #c9a24d;
+  --texto-principal: #141414;
+  --texto-secundario: #525252;
+  --texto-terciario: #6b6b6b;
+  --texto-inverso: #ffffff;
+  --texto-inverso-suave: #a8a8a8;
+  --texto-marca: #141414;
+  --borde-sutil: #e5e5e5;
+  --borde-fuerte: #8c8c8c;
+  --borde-inverso: #3a3a3a;
+  --estado-exito: #1a7f4b;
+  --estado-exito-suave: #e8f5ec;
+  --estado-alerta: #9a6700;
+  --estado-alerta-suave: #fff4d6;
+  --estado-error: #c5221f;
+  --estado-error-suave: #fce8e6;
+  --zona-vip: #6f66b0;
+  --zona-platea: #3f78b5;
+  --zona-general: #4c9a76;
+  --asiento-ocupado: #e0e0e0;
+  --asiento-reservado: #e6c36a;
+  --marca-primario-presionado: #000000;
+  --fondo-presionado: #e5e5e5;
+  --fondo-inverso-presionado: #3a3a3a;
+  /* Medidas */
+  --espacio-1: 4px;
+  --espacio-2: 8px;
+  --espacio-3: 12px;
+  --espacio-4: 16px;
+  --espacio-6: 24px;
+  --espacio-8: 32px;
+  --espacio-12: 48px;
+  --espacio-16: 64px;
+  --radio-sm: 6px;
+  --radio-md: 8px;
+  --radio-lg: 12px;
+  --radio-xl: 16px;
+  --radio-completo: 999px;
+  /* Familias tipográficas (Google Fonts) */
+  --fuente-instrument-sans: 'Instrument Sans', system-ui, sans-serif;
+  /* Sombras */
+  --sombra-tarjeta: 0px 1px 2px 0px #1414140d;
+  --sombra-flotante: 0px 8px 24px 0px #1414141a;
 }
+
+/* Estilos de texto de Figma como clases. */
+.titular-display { font-family: var(--fuente-instrument-sans); font-weight: 600; font-size: 52px; line-height: 56px; letter-spacing: -0.025em; }
+.titular-h1 { font-family: var(--fuente-instrument-sans); font-weight: 600; font-size: 34px; line-height: 40px; letter-spacing: -0.020em; }
+.titular-h2 { font-family: var(--fuente-instrument-sans); font-weight: 600; font-size: 24px; line-height: 30px; letter-spacing: -0.015em; }
+.titular-h3 { font-family: var(--fuente-instrument-sans); font-weight: 600; font-size: 20px; line-height: 26px; letter-spacing: -0.010em; }
+.titular-h4 { font-family: var(--fuente-instrument-sans); font-weight: 600; font-size: 16px; line-height: 22px; letter-spacing: -0.005em; }
+.cuerpo-g { font-family: var(--fuente-instrument-sans); font-weight: 400; font-size: 18px; line-height: 28px; }
+.cuerpo-m { font-family: var(--fuente-instrument-sans); font-weight: 400; font-size: 16px; line-height: 24px; }
+.cuerpo-m-fuerte { font-family: var(--fuente-instrument-sans); font-weight: 500; font-size: 16px; line-height: 24px; }
+.cuerpo-p { font-family: var(--fuente-instrument-sans); font-weight: 400; font-size: 14px; line-height: 20px; }
+.cuerpo-p-fuerte { font-family: var(--fuente-instrument-sans); font-weight: 500; font-size: 14px; line-height: 20px; }
+.detalle-nota { font-family: var(--fuente-instrument-sans); font-weight: 400; font-size: 12px; line-height: 16px; }
+.detalle-nota-fuerte { font-family: var(--fuente-instrument-sans); font-weight: 500; font-size: 12px; line-height: 16px; }
+.detalle-etiqueta { font-family: var(--fuente-instrument-sans); font-weight: 500; font-size: 12px; line-height: 16px; }
+.dato-cifra { font-family: var(--fuente-instrument-sans); font-weight: 600; font-size: 30px; line-height: 34px; letter-spacing: -0.020em; }
+.titular-gigante { font-family: var(--fuente-instrument-sans); font-weight: 600; font-size: 112px; line-height: 108px; letter-spacing: -0.030em; }
