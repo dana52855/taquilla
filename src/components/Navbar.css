@@ -279,6 +279,8 @@
   }
 }
 
+
 .navbar-venta {
-  color: var(--color-texto-suave);
+  color: var(--texto-secundario);
+  text-decoration: none;
 }
